@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <div class="card">
-        <div class="card-bosy">
+        <div class="card-body">
             <table class="table">
                 <thead>
                     <tr>
