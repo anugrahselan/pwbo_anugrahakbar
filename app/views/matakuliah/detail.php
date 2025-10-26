@@ -1,11 +1,28 @@
 <div class="container mt-5">
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title"><?php echo $data['matkul']['kode_mk']; ?></h5>
-            <h6 class="card-subtitle mb-2 text-muted"><?php echo $data['matkul']['nama_mk']; ?></h6>
-            <p class="card-text"><?php echo $data['matkul']['jns_mk']; ?></p>
-            <p class="card-text"><?php echo $data['matkul']['sks']; ?></p>
-            <a href="<?php echo BASEURL; ?>/matakuliah" class="card-link">Kembali</a>
+    <div class="card">
+        <div class="card-bosy">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Kode matakuliah</th>
+                        <th scope="col">Nama Matakuliah</th>
+                        <th scope="col">jenis Matakuliah</th>
+                        <th scope="col">SKS</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><?php echo $data['matkul']['kode_mk']; ?></td>
+                        <td><?php echo $data['matkul']['nama_mk']; ?></td>
+                        <td><?php echo $data['matkul']['jns_mk']; ?></td>
+                        <td><?php echo $data['matkul']['sks']; ?></td>
+                        <td><a href="<?php echo BASEURL; ?>/matakuliah" class="card-link">Kembali</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
